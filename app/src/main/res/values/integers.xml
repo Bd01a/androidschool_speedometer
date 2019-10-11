@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_max_speed_speedometer_view">360</integer>
+    <integer name="default_speed_speedometer_view">0</integer>
+
+</resources>

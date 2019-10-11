@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="speedometerView">@style/SpeedometerDefaultStyle</item>
+    </style>
+    
+    <style name="SpeedometerDefaultStyle">
+        <item name="max_speed">@integer/default_max_speed_speedometer_view</item>
+        <item name="low_speed_color">@color/default_low_speed_speedometer_view_color</item>
+        <item name="middle_speed_color">@color/default_middle_speed_speedometer_view_color</item>
+        <item name="high_speed_color">@color/default_high_speed_speedometer_view_color</item>
+        <item name="arrow_color">@color/default_arrow_speedometer_view_color</item>
+    </style>
+
+</resources>
