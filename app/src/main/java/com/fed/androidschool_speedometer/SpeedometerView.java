@@ -10,6 +10,7 @@ import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,8 +20,11 @@ import androidx.core.widget.TextViewCompat;
 
 import java.nio.MappedByteBuffer;
 
+
+
 public class SpeedometerView extends View {
 
+    public static final String TAG = "SpeedometerView";
 
     private static final int TEXT_SIZE_NUMBER_PAINT = 55;
     private static final int TEXT_SIZE_MARKING_PAINT = 60;
@@ -178,6 +182,7 @@ public class SpeedometerView extends View {
 
     public void setSpeed(int mSpeed) {
         this.mSpeed = mSpeed;
+        invalidate();
     }
 
     public int getMaxSpeed() {
@@ -186,6 +191,7 @@ public class SpeedometerView extends View {
 
     public void setMaxSpeed(int mMaxSpeed) {
         this.mMaxSpeed = mMaxSpeed;
+        invalidate();
     }
 
     public int getLowSpeedColor() {
@@ -194,6 +200,7 @@ public class SpeedometerView extends View {
 
     public void setLowSpeedColor(int mLowSpeedColor) {
         this.mLowSpeedColor = mLowSpeedColor;
+        invalidate();
     }
 
     public int getMiddleSpeedColor() {
@@ -202,6 +209,7 @@ public class SpeedometerView extends View {
 
     public void setMiddleSpeedColor(int mMiddleSpeedColor) {
         this.mMiddleSpeedColor = mMiddleSpeedColor;
+        invalidate();
     }
 
     public int getHighSpeedColor() {
@@ -210,6 +218,7 @@ public class SpeedometerView extends View {
 
     public void setHighSpeedColor(int mHighSpeedColor) {
         this.mHighSpeedColor = mHighSpeedColor;
+        invalidate();
     }
 
     public int getArrowColor() {
@@ -218,5 +227,6 @@ public class SpeedometerView extends View {
 
     public void setArrowColor(int mArrowColor) {
         this.mArrowColor = mArrowColor;
+        invalidate();
     }
 }
